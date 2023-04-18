@@ -21,6 +21,7 @@ namespace ApiContabilidad.Controllers
             var userName = "contador";
             var passPhrase = "tecni20100";
             var priv = @"C:\Users\Provisional04\Desktop\ConsoleApp1\keys\contadortecni";
+            //keys ruta llave contabilidad
             string path = Directory.GetCurrentDirectory()+"\\keys";
 
 
@@ -32,7 +33,7 @@ namespace ApiContabilidad.Controllers
 
             client.Connect();
             var paths = client.ListDirectory(".");
-
+            //keys ruta servidor tecnimotors
             var remoteFolderPath = "/home/contador/documents/bizlinks/CDR/";
             var files = client.ListDirectory(remoteFolderPath);
             var pruebanombre = "";
